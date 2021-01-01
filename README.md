@@ -4,5 +4,6 @@ made by Django and Flask, Right Now, It only contains some simple Python applica
 1. Python Simple Web Server
 2. Python Email Client with Attachments
 3. Python NTP Query script
+4. Python Proxy server script
 
                                                               
