@@ -36,15 +36,14 @@ def __init__(self,config):
             webserver_pos = len(temp)
         webserver = ""
         port = -1
-        if (port_pos == -1 or webserver_pos < port_pos):
-            port = 80
+        if (port_pos == -1 or webserver_pos < port_pos):git
             webserver = temp[:webserver_pos]
         else:
             port = int((temp[(port_pos+1):])[:webserver_pos-port_pos-1])
             webserver = temp[:port_pos]
         s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         s.settimeout(config['CONNECTION_TIMEOUT'])
-        s.connect((webserver,port))
+ s.connect((webserver,port))
         s.sendall(request)
         while 1:
             data = s.recv(config['MAX_REQUEST_LEN'])
